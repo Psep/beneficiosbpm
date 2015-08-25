@@ -1,4 +1,4 @@
-Repository Init Content
-=======================
+Beneficios BPM
+==============
 
-Your project description here.
+Proyecto de ejemplo para jBPM 6.2

@@ -1,0 +1,15 @@
+import java.lang.Number;
+import cl.jbug.jbpm.beneficios.Solicitante;
+
+rule "ValidaViudez"
+	dialect "mvel"
+	no-loop true
+	ruleflow-group "beneficios"
+	when
+		solicitante : Solicitante( estadoCivil == 4 , sueldo < 250000 )
+	then
+		solicitante.setMontoBono( solicitante.montoBono + 50000 * (1 + solicitante.numHijos) );
+		solicitante.setMensaje( solicitante.mensaje + "Califica para Bono de Viudez<br/>" );
+		System.out.println("Regla lanzada: " + kcontext.getRule().getName());
+		System.out.println("Bono $" + solicitante.montoBono);
+end

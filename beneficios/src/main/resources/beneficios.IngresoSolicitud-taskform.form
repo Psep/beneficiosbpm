@@ -1,0 +1,67 @@
+
+<form id="1621162546">
+<property name="name" value="beneficios.IngresoSolicitud-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="2" name="solicitante_edad" type="InputTextInteger" id="1421718766">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;edad (solicitante)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="solicitante/edad"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="3" name="solicitante_estadoCivil" type="InputTextInteger" id="1403673989">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;estadoCivil (solicitante)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="solicitante/estadoCivil"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="1" name="solicitante_nombre" type="InputText" id="2123343859">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Nombre completo del Solicitantequot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="outputBinding" value="solicitante/nombre"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="4" name="solicitante_numHijos" type="InputTextInteger" id="1460187980">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;numHijos (solicitante)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="solicitante/numHijos"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="0" name="solicitante_run" type="InputTextInteger" id="780971719">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;RUN del Solicitantequot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="solicitante/run"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="5" name="solicitante_sexo" type="InputTextInteger" id="970027095">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;sexo (solicitante)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="solicitante/sexo"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="6" name="solicitante_sueldo" type="InputTextInteger" id="1371244306">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;sueldo (solicitante)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="solicitante/sueldo"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<dataHolder inputId="" name="#0000A0" type="basicType" outId="isEvaluacion" value="java.lang.Boolean" id="isEvaluacion"/>
+<dataHolder inputId="" name="#FF54A7" type="basicType" outId="observaciones" value="java.lang.String" id="observaciones"/>
+<dataHolder inputId="" name="#A7E690" type="basicType" outId="resultado" value="java.lang.String" id="resultado"/>
+<dataHolder inputId="" name="#B29FE4" type="dataModelerEntry" outId="solicitante" value="cl.jbug.jbpm.beneficios.Solicitante" id="solicitante"/>
+</form>

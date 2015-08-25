@@ -1,0 +1,15 @@
+import java.lang.Number;
+import cl.jbug.jbpm.beneficios.Solicitante;
+
+rule "ValidaSubsidioJoven"
+	dialect "mvel"
+	no-loop true
+	ruleflow-group "beneficios"
+	when
+		s : Solicitante( edad < 25 , sueldo <= 250000 )
+	then
+		s.setMontoBono( s.montoBono + (350000 - s.sueldo) );
+		s.setMensaje( s.mensaje + "Califica para Subsidio joven<br/>" );
+		System.out.println("Regla lanzada: " + kcontext.getRule().getName());
+		System.out.println("Bono $" + s.montoBono);
+end

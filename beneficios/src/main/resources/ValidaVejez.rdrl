@@ -1,0 +1,15 @@
+import java.lang.Number;
+import cl.jbug.jbpm.beneficios.Solicitante;
+
+rule "ValidaVejez"
+	dialect "mvel"
+	no-loop true
+	ruleflow-group "beneficios"
+	when
+		s : Solicitante( edad >= 65 , sueldo <= 150000 )
+	then
+		s.setMontoBono( s.montoBono + 50000 );
+		s.setMensaje( s.mensaje + "Califica para Bono de Vejez<br/>" );
+		System.out.println("Regla lanzada: " + kcontext.getRule().getName());
+		System.out.println("Bono  $" + s.montoBono);
+end

@@ -1,0 +1,15 @@
+import java.lang.Number;
+import cl.jbug.jbpm.beneficios.Solicitante;
+
+rule "ValidaAguinaldo"
+	dialect "mvel"
+	no-loop true
+	ruleflow-group "beneficios"
+	when
+		s : Solicitante( numHijos > 0 , sueldo < 250000 )
+	then
+		s.setMontoBono( s.montoBono + (10000 * s.numHijos) );
+		s.setMensaje( s.mensaje + "Califica para aguinaldo<br/>" );
+		System.out.println("Regla lanzada: " + kcontext.getRule().getName());
+		System.out.println("Bono $" + s.montoBono);
+end
